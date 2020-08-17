@@ -9,8 +9,7 @@ module.exports = {
 
 function addUser(user) {
   try {
-    const [id] = db("users").insert(user, "id");
-    return getUserById(id);
+    return db("users").insert(user);
   } catch (err) {
     throw error;
   }
