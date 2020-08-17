@@ -1,5 +1,5 @@
 module.exports = (req, res, next) => {
-  if (res.session.loggedIn) {
+  if (req.session && req.session.loggedIn) {
     next();
   } else {
     res.status(401).json({ message: "Invalid credentials" });
