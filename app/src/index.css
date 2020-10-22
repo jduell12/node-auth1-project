@@ -1,0 +1,11 @@
+html,
+body {
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+a {
+  color: white;
+  margin: 3%;
+}
